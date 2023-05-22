@@ -1,6 +1,7 @@
+//Declarative Pipeline 
 pipeline{
 tools{
-jdk 'java'
+jdk 'myjava'
 maven 'mymaven'
 }
 agent any
@@ -8,7 +9,7 @@ stages{
 stage('Clone Repo')
 {
 steps{
-git 'https://github.com/RayItern/JUNECLASSPRO1.git'
+git 'https://github.com/Djatl1/DevOpsMay.git'
 }
 }
 stage('Compile the code')
