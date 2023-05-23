@@ -1,6 +1,6 @@
 //Declarative Pipeline 
 pipeline{
-:tools{
+tools{
 jdk 'myjava'
 maven 'mymaven'
 }
