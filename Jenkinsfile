@@ -1,8 +1,8 @@
 //Declarative Pipeline 
 pipeline{
 tools{
-jdk 'myjava'
-maven 'mymaven'
+jdk 'myjdk'
+maven 'mymvn'
 }
 agent any
 stages{
