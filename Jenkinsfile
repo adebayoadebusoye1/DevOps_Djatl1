@@ -26,7 +26,7 @@ steps{
 sh 'mvn pmd:pmd'
 }
 }
-stage('Build the artifact on Master)
+stage('Build the artifact on Master')
 {
 agent any
 steps{
