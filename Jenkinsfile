@@ -1,6 +1,6 @@
 //Declarative Pipeline 
 pipeline{
-tools{
+:tools{
 jdk 'myjava'
 maven 'mymaven'
 }
@@ -12,20 +12,23 @@ steps{
 git 'https://github.com/Djatl1/DevOpsMay.git'
 }
 }
-stage('Compile the code')
+stage('Compile on Slave1')
 {
+agent{label 'slave1'}
 steps{
 sh 'mvn compile'
 }
 }
-stage('Code Analysis')
+stage('Code Analysis on Slave2')
 {
+agent{label 'slave2'}
 steps{
 sh 'mvn pmd:pmd'
 }
 }
-stage('Build the artifact')
+stage('Build the artifact on Master)
 {
+agent any
 steps{
 sh 'mvn package'
 }
