@@ -2,3 +2,6 @@
 <h2 TheItern school of DevOps, Hope for every new ITERNS<h2>
 		<h3> More changes will be made soon...<h3>
 
+ This is a test of CI/CD and that are automation process was IN FACT succesful. Congrats if you can see this!!. 
+
+ :D
