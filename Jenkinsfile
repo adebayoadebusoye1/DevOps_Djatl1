@@ -9,7 +9,7 @@ stages{
 stage('Clone Repo')
 {
 steps{
-git 'https://github.com/Djatl1/DevOpsMay.git'
+git 'https://github.com/adebayoadebusoye1/DevOps_Djatl1.git'
 }
 }
 stage('Compile on Slave1')
